@@ -3,7 +3,6 @@
 ## Actividad grupal: Bases de datos NoSQL y motores de búsqueda
 
 ### Emilio Brahim Quechen Romero
-### Minerva Barroso Murillo
 ### Anabel Díaz
 
 
