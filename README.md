@@ -1,14 +1,66 @@
-# PFU Ingeniería de Software
-## Asignatura Bases de Datos Avanzadas
-## Actividad grupal: Bases de datos NoSQL y motores de búsqueda
+# Plataforma ETL de Datos de Estaciones de Servicio
+Este sistema implementa un pipeline de ingeniería de datos para la ingestión, transformación y explotación de grandes volúmenes de datos públicos sobre precios de combustibles en España.
 
-### Emilio Brahim Quechen Romero
-### Anabel Díaz
+### Autores y créditos
+
+###  🐢️ [Emilio Quechen](https://github.com/eQuechen) y [Anabel Díaz](https://github.com/rubiwan) 👨‍💻
+
+Desarrollado para la asignatura **Bases de Datos Avanzadas**.  
+Incluye prácticas reales de diseño de software, modularización y pruebas automatizadas.
 
 
-## Para establecer conexión con las BBDD correctamente a través del proyecto Java "bbdda-actividad3-grupal" se debe hacer lo siguiente:
+## Proyecto orientado a demostrar competencias reales en:
 
-### Configuración Java
+- Ingeniería de datos
+- Backend
+- Arquitectura de software
+- Integración de bases de datos
+- Motores de búsqueda
+
+
+##  Problema que Resuelve
+
+Los datos públicos de estaciones de servicio publicados por organismos oficiales:
+
+- Se encuentran en **formatos masivos poco explotables (CSV)**
+- No están optimizados para **búsquedas rápidas ni analítica**
+- No permiten **consultas eficientes geográficas o por precios**
+- No están preparados para **plataformas modernas de datos**
+  
+## Flujo de datos
+
+- Extracción de datos desde fuentes públicas en formato CSV
+- Normalización e inserción en base de datos relacional MySQL
+- Transformación a formato documental JSON
+- Migración a base de datos NoSQL MongoDB
+- Generación de datasets optimizados para indexación
+- Indexación en clúster ElasticSearch para búsquedas eficientes
+
+### Arquitectura
+
+```
+Fuente pública: CSV Ministerio Transición Ecológica
+├── Motor ETL en Java (JDBC)
+├── Base de datos relacional (MySQL)
+├── Transformación a JSON
+├── Base de datos documental (MongoDB)
+├── Dataset Bulk
+└── ElasticSearch Cluster
+```
+### Tecnologías utilizadas
+
+- **Java (procesamiento ETL)**
+- **JDBC**
+- **MySQL (modelo relacional)**
+- **MongoDB (modelo documental)**
+- **ElasticSearch (motor de búsqueda)**
+- **Docker (entornos reproducibles)**
+- **Procesamiento masivo CSV / JSON**
+
+## Configuración del entorno
+
+
+### Variables de entorno
 	1A. Crear las variables de entorno:
 		MYSQL_DB_NAME=estaciones_de_servicio_mysql;
 		MYSQL_DB_HOST=localhost;
