@@ -132,4 +132,4 @@ This is an educational batch pipeline. A successful compilation alone does not v
 
 ## Authors
 
-The existing README credits [Emilio Quechen](https://github.com/eQuechen) and [Anabel Díaz](https://github.com/rubiwan). Source-file author comments also name Minerva.
+The existing README credits [Anabel Díaz](https://github.com/rubiwan) and [Emilio Quechen](https://github.com/eQuechen).
